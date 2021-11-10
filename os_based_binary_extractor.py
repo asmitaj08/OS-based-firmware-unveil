@@ -45,6 +45,7 @@ def get_dir_path(directory_name, directory_path):
             return os.path.join(root, directory_name)
     return result
 
+
 # def get_file_paths(directory_path):
 #     targeted_directory_path = ["/bin", "/usr/bin", "/sbin", "/usr/sbin" ]
 #     targeted_file_paths = []
@@ -78,6 +79,7 @@ def extract_version_number(file_name):
     emulated_file_dump.close()
     #Remove the file, not needed anymore
     subprocess.run(["rm", "test1.txt"])
+
      
     # version pattern match 
     version_pattern = re.compile(r'(\d+)\.(\d+)\.(\d+)')
